@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+    word-break: break-all;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    background: #000;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+/* ヘッダー */
+header {
+    position: relative;
+    z-index: 10;
+    justify-content: flex-end;
+    /*装飾のためのCSS*/
+    background: #000;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* 追跡 */
+#locus {
+    display: inline-flex;
+    margin: 0 auto 0 0;
+    vertical-align: middle;
+}
+
+#locus a {
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+#locus li.active a {
+    color: #666;
+}
+
+/*全体のエリア設定*/
+
+.background-photo {
+    background-image: url(img/background-photo.png);
+    background-repeat: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.works-link li a {
+    font-family: 'Shippori Antique B1', sans-serif;
+    display: block;
+    text-align: right;
+    font-size: 120px;
+    color: #f2f2f2;
+    transition: background-color 0.2s;
+    margin:-20px auto;
+}
+
+.works-link #top a:hover {
+    background-color:rgba(218,60,79,0.6);
+}
+
+.works-link #web a:hover {
+background-color:rgba(218,155,60,0.6);
+}
+
+.works-link #int a:hover {
+    background-color:rgba(90,189,74,0.6);
+
+}
+
+.works-link #oth a:hover {
+    background-color:rgba(53,119,156,0.6);
+}
